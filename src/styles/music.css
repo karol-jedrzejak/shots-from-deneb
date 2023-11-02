@@ -1,0 +1,62 @@
+.music-cover {
+  max-width: 100%;
+  width: 400px;
+}
+
+.music-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.music-row div {
+  width: 40%;
+}
+
+.music-column-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 1rem;
+}
+
+.music-column-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 719px) {
+  .music-column-l {
+    align-items: center;
+  }
+  .music-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .music-row div {
+    width: auto;
+    max-width: calc(100% - 2rem);
+  }
+}
+.play {
+  text-align: center;
+}
+
+#player {
+  position: relative;
+  border: 0;
+  width: 500px;
+  height: 120px;
+  z-index: 100;
+}
+
+@media (max-width: 720px) {
+  #player {
+    width: 300px;
+    height: 120px;
+  }
+}/*# sourceMappingURL=music.css.map */

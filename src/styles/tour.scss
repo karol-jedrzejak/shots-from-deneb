@@ -1,0 +1,43 @@
+#tour-table-pc {
+  width: 100%;
+  text-align: center;
+  padding: 2px;
+  border-collapse: collapse;
+}
+
+#tour-table-mobile {
+  width: 100%;
+  text-align: center;
+  padding: 2px;
+  display: none;
+  border-collapse: collapse;
+}
+
+#tour-table-mobile tr,
+#tour-table-pc tr {
+  border-top: 1pt solid rgb(63, 63, 63);
+}
+
+#tour-table-mobile th,
+td,
+#tour-table-pc th,
+td {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1199px) {
+  #tour-table-pc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  #tour-table-mobile {
+    display: block;
+  }
+}
+
+.tour-poster {
+  max-width: 200px;
+  max-height: 200px;
+}

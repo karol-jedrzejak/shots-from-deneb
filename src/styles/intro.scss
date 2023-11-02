@@ -1,0 +1,73 @@
+@import "./intro/intro-fog.css";
+@import "./intro/intro-rain.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  //overflow: hidden;
+  background-image: url("../assets/backgrounds/background_01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /*   background: #000;
+  background: rgba(0, 0, 0, 1); */
+  overflow-x: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: black;
+  opacity: 0.6;
+}
+
+#logo {
+  width: auto;
+  height: 60vh;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  z-index: 51;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(10px -10px 10px rgba(0, 0, 0, 0.7))
+    drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.7))
+    drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7))
+    drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.7));
+  animation-name: show;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+}
+
+@media screen and (max-width: 719px) {
+  #logo {
+    width: 70vw;
+    height: auto;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
