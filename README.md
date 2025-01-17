@@ -1,6 +1,6 @@
 # Shots From Deneb Website
  
-<img src="https://karol-jedrzejak.github.io/static/media/6.85a8b66a788705d6b20a.jpg" height="400">
+<img src="https://github.com/karol-jedrzejak/karol-jedrzejak.github.io/blob/master/src/assets/projects/6.jpg" height="400">
 
 ## About Project
 
